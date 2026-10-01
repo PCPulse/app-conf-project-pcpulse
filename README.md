@@ -1,4 +1,4 @@
-!\[Taskflow logo](images/logo-taskflow.png)
+<img src="./images/logo-taskflow.png" alt="Taskflow logo" width="400">
 
 
 
