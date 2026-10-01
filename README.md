@@ -1,4 +1,4 @@
-<img src="./images/logo-taskflow.png" alt="Taskflow logo" width="400">
+<img src="./images/logo-taskflow.png" alt="Taskflow logo" width="700">
 
 
 
