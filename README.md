@@ -1,4 +1,4 @@
-!\[taskflow logo](logo taskflow.png)
+!\[Taskflow logo](images/logo-taskflow.png)
 
 
 
