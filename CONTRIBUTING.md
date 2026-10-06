@@ -7,10 +7,10 @@
 ### Ветвление
 
 - `main` — стабильная версия
-- `feature/taskflow` — новые функции
-- `bugfix/taskflow` — исправление багов
+- `feature/[название]` — новые функции
+- `bugfix/[название]` — исправление багов
 
-## Коммиты
+### Коммиты
 
 Используем Conventional Commits:
 
@@ -22,7 +22,7 @@
 - `test:` добавление тестов
 - `chore:` рутинные задачи
 
-Пример: `feat: add user authentication endpoint`
+Пример: `feat: add initial FastAPI application with health check`
 
 ## Code Review
 
@@ -44,8 +44,6 @@
 
 ## Контакты
 
-- Тимлид: Кирилл, @cloynesssaa
-- Tech Lead: Арсений, @so1oface
-
-
-
+- Team Lead: Чувильчиков К.М., [@cloynesssaa]
+- Backend Developer / Tech Lead: Судец-Ребров А.В., [@so1oface]
+- Desktop Developer: Редков М.А., [@m4m_r4v]

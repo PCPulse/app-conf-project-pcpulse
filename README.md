@@ -1,60 +1,65 @@
-!\[Taskflow logo](images/logo-taskflow.png)
+<img src="./images/pcpulse_logo.png" alt="Taskflow logo" width="900">
 
 
+# PCPulse
 
-\# Taskflow
+Приложение для мониторинга производительности ПК с игровым оверлеем и рекомендациями по апгрейду. Собирает показатели процессора, видеокарты и оперативной памяти, сохраняет статистику и использует машинное обучение для выявления необычного поведения оборудования. Результаты анализа помогают пользователю разобраться в возможных причинах снижения производительности.
 
+## Команда
 
+- **Чувильчиков К.М.** — Team Lead.
+- **Судец-Ребров А.В.** — Backend Developer / Tech Lead.
+- **Редков М.А.** — Desktop Developer.
 
-Taskflow — веб-приложение для управления задачами команды. Оно позволит создавать задачи, назначать ответственных, устанавливать сроки и отслеживать выполнение. Проект разрабатывается на Python с использованием FastAPI.
+## Стек технологий
 
+### Backend
 
+- Python 3.11+.
+- FastAPI.
+- Uvicorn.
+- Pydantic.
+- SQLite.
 
-\## Команда
+### ML / аналитика
 
+- Python 3.11+.
+- scikit-learn — Isolation Forest.
+- pandas.
+- NumPy.
+- joblib.
 
+### Desktop
 
-\- Кирилл Чувильчиков — Backend Developer
+- C# + .NET.
+- WPF + XAML.
+- MVVM.
+- HttpClient.
 
-\- Арсений Судец-Ребров — Tech Lead, DevOps
+### Мониторинг и оверлей
 
+- LibreHardwareMonitorLib.
+- Windows Performance Counters.
+- WPF + Win32 API.
 
+## Архитектура
 
-\## Стек технологий
+```text
+Desktop (WPF) ──▶ Backend API (FastAPI) ──▶ ML (scikit-learn)
+                         │                       │
+                         ▼                       ▼
+                       SQLite                Model Store
+                                         (моделей в Git нет)
+```
 
-
-
-\- Python 3.11
-
-\- FastAPI
-
-\- PostgreSQL
-
-\- Docker
-
-\- GitHub Actions
-
-
-
-\## Статус
-
-
+## Статус
 
 Проект в разработке.
 
-
-
-\## Установка и запуск
-
-
+## Установка и запуск
 
 (Будет добавлено позже)
 
+## Лицензия
 
-
-\## Лицензия
-
-
-
-MIT
-
+MIT.
