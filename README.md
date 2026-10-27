@@ -7,9 +7,10 @@
 
 ## Команда
 
-- **Чувильчиков К.М.** — Team Lead.
-- **Судец-Ребров А.В.** — Backend Developer / Tech Lead.
-- **Редков М.А.** — Desktop Developer.
+- **Чувильчиков Кирилл** — Team Lead / Аналитик.
+- **Судец-Ребров Арсений** — Frontend / UI/UX.
+- **Редков Максим** — Backend Developer.
+- **Булавин Данила** — Desktop Developer.
 
 ## Стек технологий
 
