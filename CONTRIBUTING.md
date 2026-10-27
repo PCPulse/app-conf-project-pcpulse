@@ -44,6 +44,7 @@
 
 ## Контакты
 
-- Team Lead: Чувильчиков К.М., [@cloynesssaa]
-- Backend Developer / Tech Lead: Судец-Ребров А.В., [@so1oface]
-- Desktop Developer: Редков М.А., [@m4m_r4v]
+- Team Lead / Аналитик: Чувильчиков К.М., [@cloynesssaa]
+- Frontend / UI/UX: Судец-Ребров А.В., [@so1oface]
+- Backend Developer: Редков М.А., [@m4m_r4v]
+- Desktop Developer: Булавин Д., [@danufe]
