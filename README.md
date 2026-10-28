@@ -63,6 +63,24 @@ Desktop (WPF) ──▶ Backend API (FastAPI) ──▶ RAWG API
 
 (Будет добавлено позже) 
 
+## API
+
+### GET /version
+
+Возвращает версию приложения и название команды.
+
+Запрос к запущенному приложению:
+
+```powershell
+curl.exe -i http://127.0.0.1:8000/version
+```
+
+Ответ: HTTP 200.
+
+```json
+{"version":"0.2.0","team":"PCPulse"}
+```
+
 ## Лицензия
 
 MIT.
