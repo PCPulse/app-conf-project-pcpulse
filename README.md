@@ -61,7 +61,20 @@ Desktop (WPF) ──▶ Backend API (FastAPI) ──▶ RAWG API
 
 ## Установка и запуск
 
-(Будет добавлено позже) 
+Для запуска текущего Backend API нужен Python 3.11+. Выполните команды из корня репозитория:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn main:app --reload
+```
+
+После запуска доступны:
+
+- Документация API: http://127.0.0.1:8000/docs.
+- Проверка работоспособности: http://127.0.0.1:8000/health — ответ `{"status":"healthy"}`.
+
+Параметр `--reload` предназначен для локальной разработки.
 
 ## Лицензия
 
