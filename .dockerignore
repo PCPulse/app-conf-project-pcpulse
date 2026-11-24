@@ -1,0 +1,10 @@
+.git
+.venv
+venv
+env
+.env
+**/__pycache__
+**/*.pyc
+.idea
+.vscode
+Инструкция к 3 практике.txt
