@@ -1,4 +1,9 @@
+import logging
+import os
+
+import psycopg
 from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 
 
 app = FastAPI(
@@ -9,6 +14,8 @@ app = FastAPI(
 
 TEAM_NAME = "PCPulse"
 
+logger = logging.getLogger("uvicorn.error")
+
 
 @app.get("/")
 async def root():
@@ -17,9 +24,33 @@ async def root():
 
 
 @app.get("/health")
-async def health_check():
-    """Проверка работоспособности приложения."""
-    return {"status": "healthy"}
+def health_check():
+    """Проверка приложения и подключения к базе данных."""
+    database_url = os.environ.get("DATABASE_URL")
+
+    if not database_url:
+        return JSONResponse(
+            status_code=503,
+            content={
+                "status": "unhealthy",
+                "database": "DATABASE_URL is not set",
+            },
+        )
+
+    try:
+        with psycopg.connect(database_url, connect_timeout=3) as connection:
+            connection.execute("SELECT 1")
+    except psycopg.Error as error:
+        logger.warning("Health check: database is unavailable: %s", error)
+        return JSONResponse(
+            status_code=503,
+            content={
+                "status": "unhealthy",
+                "database": "unavailable",
+            },
+        )
+
+    return {"status": "healthy", "database": "ok"}
 
 
 @app.get("/version")
