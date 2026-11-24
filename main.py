@@ -19,7 +19,7 @@ logger = logging.getLogger("uvicorn.error")
 
 @app.get("/")
 async def root():
-    """Корневой эндпоинт."""
+    """Корневой эндпоинт PCPulse."""
     return {"message": "Hello World"}
 
 
